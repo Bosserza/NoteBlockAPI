@@ -16,9 +16,9 @@ public abstract class SongPlayer {
     protected boolean autoDestroy = false;
     protected boolean destroyed = false;
     protected Thread playerThread;
-    protected byte fadeTarget = 100;
+    protected byte fadeTarget = 20;
     protected byte volume = 100;
-    protected byte fadeStart = volume;
+    protected byte fadeStart = 5;
     protected int fadeDuration = 60;
     protected int fadeDone = 0;
     protected FadeType fadeType = FadeType.FADE_LINEAR;
